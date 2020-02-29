@@ -3,13 +3,58 @@ h1{
     font-size: 25px;
     float: center;
     display: flex;
+    color:#bb433e;
+}
+h2{
+    position:relative;
+    left: 50px;
+    top:  20px;
+    font-size: 30px;
+    color:white;
+}
+body{
+    background-color: #FEFBFB;
+}
+html{
+    overflow-x: hidden;
+}
+p{
+    font-size: 17px;
+}
+button{
+    background-color: #bb433e;
+    color:#FEFBFB;
 }
 
-
 #entrada{
-    position: relative;
-    width: 2500px;
-    height: 150px;
+    position:relative;
+    left: -15px;
+    height: 90px;
     background-color: black;
+}
+#topo{
+    background-color: #bb433e;
+    position:  relative;
+    left: -15px;
+    height: 20px;
+}
+#bemvindo{
+    /*background-*/
+    width: 1200px;
+    height: 100px;
+    position:relative;
+}
+#imagem{
+    position: relative;
+    width: 600px;
+    height: 350px;
+    background-image: url(academia.jpg);
+    background-repeat: no-repeat;
+}
+#texto{
+        position:relative;
+        top:  -280px;
+        width: 400px;
+        height: 300px;
 }
 

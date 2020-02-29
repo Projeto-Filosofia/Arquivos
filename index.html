@@ -1,15 +1,52 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+<head></head>
     <title>A Filosofia da Vida</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" media="screen and (min-widht: 0px)" type="text/css" href="estilo.css">
-    <link rel="stylesheet" media="screen and (min-widht: 0px)" type="text/css" href="estilo1.css">
-    <link rel="stylesheet" media="screen and (min-widht: 0px)" type="text/css" href="estilo2.css">
-</head>
-  <body>
-  <div id="entrada"><div></div>
-    <h1>Teste de tamanho</h1>
+    <link rel="stylesheet"  type="text/css" href="estilo.css"><!--
+  <link rel="stylesheet" media="screen and (min-widht: 0px)" type="text/css" href="estilo1.css">
+    <link rel="stylesheet" media="screen and (min-widht: 0px)" type="text/css" href="estilo2.css">--> 
+<script src="filosofia.js"></script>
+  </head>
+
+  <body 
+  onload="definir_tamanho_topo(document.getElementById('topo')),
+          definir_tamanho_entrada(document.getElementById('entrada')),
+          definir_esquerda_entrada(document.getElementById('bemvindo')),
+          definir_esquerda_entrada(document.getElementById('imagem')), 
+          definir_topo_imagem(document.getElementById('imagem')),
+           definir_esquerda_texto(document.getElementById('texto'))" 
+  
+  onresize="mudar_tamanho_entrada(document.getElementById('entrada')),
+            mudar_tamanho_topo(document.getElementById('topo'))">
+  
+  <div id="entrada"> 
+    <h2>Filosofando</h2>
+    <br>
+    <div id="topo">
+  </div>
+  </div>
+  <br><br>
+ <div id="bemvindo">
+   <h1>Bem vindo!</h1>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+    </p>
+ </div>
+ <div id="imagem">
+ </div>
+ <div id="texto">
+   <h1>Verbetes</h1>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <button>Ler mais</button>
+</div>
 </body>
 </html>
