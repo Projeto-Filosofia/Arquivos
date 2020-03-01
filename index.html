@@ -12,21 +12,40 @@
   <body 
   onload="definir_tamanho_topo(document.getElementById('topo')),
           definir_tamanho_entrada(document.getElementById('entrada')),
+          definir_tamanho_entrada(document.getElementById('menu')),
           definir_esquerda_entrada(document.getElementById('bemvindo')),
           definir_esquerda_entrada(document.getElementById('imagem')), 
           definir_topo_imagem(document.getElementById('imagem')),
-           definir_esquerda_texto(document.getElementById('texto'))" 
-  
-  onresize="mudar_tamanho_entrada(document.getElementById('entrada')),
-            mudar_tamanho_topo(document.getElementById('topo'))">
+          definir_esquerda_menu(document.getElementById('ul_principal')),
+           definir_esquerda_texto(document.getElementById('texto'))"
+  onresize="definir_tamanho_entrada(document.getElementById('entrada')),
+            definir_tamanho_entrada(document.getElementById('menu')),
+            definir_tamanho_topo(document.getElementById('topo'))">
   
   <div id="entrada"> 
-    <h2>Filosofando</h2>
+    <h2>Café & Filosofia</h2>
     <br>
-    <div id="topo">
+  </div> 
+  <nav id="menu">
+    <ul id="ul_principal">
+   <li class="li_p"><a href="">Home</a></li>
+   <li class="li_p"><a href="">Matérias</a> 
+    <ul class="ul_materias">
+        <li><a href="">Verbetes</a> </li>
+        <li><a href="">Biografias</a></li>
+    </ul>
+      </li>
+   <li class="li_p"><a href="">Fale conosco</a> 
+   <ul class="ul_fale">
+    <li><a href=""> Quem nós somos?</a></li>
+    <li> <a href="">Entre em contato</a></li>
+</ul>
+</li>
+    </ul>
+</nav>
+ <div id="topo">
   </div>
-  </div>
-  <br><br>
+ <br>
  <div id="bemvindo">
    <h1>Bem vindo!</h1>
    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -46,7 +65,7 @@
      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
-    <button id="mouse" onmousedown="mudar_cor()">Ler mais</button>
+    <button id="mouse">Ler mais</button>
 </div>
 </body>
 </html>

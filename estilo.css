@@ -3,14 +3,14 @@ h1{
     font-size: 25px;
     float: center;
     display: flex;
-    color:#bb433e;
+    color:#4a56ca;
 }
 h2{
     position:relative;
     left: 50px;
-    top:  20px;
+    top:  40px;
     font-size: 30px;
-    color:white;
+    color:rgb(255, 255, 255);
 }
 body{
     background-color: #FEFBFB;
@@ -24,19 +24,21 @@ p{
 button{
     background-color: #bb433e;
     color:#FEFBFB;
+    width: 100px;
+    height: 30px;
 }
+button:hover{background-color: #4a56ca;}
 
 #entrada{
     position:relative;
-    left: -15px;
-    height: 90px;
+    height: 75px;
     background-color: black;
+    left: -15px;
 }
 #topo{
     background-color: #bb433e;
     position:  relative;
-    left: -15px;
-    height: 20px;
+    height: 15px;
 }
 #bemvindo{
     /*background-*/
@@ -57,4 +59,48 @@ button{
         width: 400px;
         height: 300px;
 }
+*{
 
+    border: 0px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: block;
+    height: 30px;
+    padding: 0px 35px;
+    position: relative;
+    top: -12px;
+}
+nav{
+    background-color: black;
+    height:35px;
+    padding: 0px;
+    position: relative;
+    left: -15px;
+}
+#ul_principal{
+    position: relative;
+    margin: auto;
+}
+.li_p{
+    
+    line-height: 40px;
+    margin: auto;
+    float: left;
+    background-color: black;
+}
+ul li ul li{
+    position:relative;
+    left: -40px;
+   background-color: rgb(20, 20, 20);
+}
+
+a:hover{background-color: rgb(202, 74, 74)}
+
+.ul_materias, .ul_fale{
+     display: none;
+}
