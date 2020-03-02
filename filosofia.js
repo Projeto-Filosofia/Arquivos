@@ -18,9 +18,26 @@ function definir_topo_imagem(x){
     x.style.left = (document.body.clientWidth * 0.6) + 'px';
     }
    function definir_esquerda_menu(x){
-    x.style.left = (document.body.clientWidth * 0.65) + 'px';
+    x.style.left = (document.body.clientWidth * 0.60) + 'px';
     }
 
-    
+    $(document).ready(function() {
+ var botao = $('.btn1');
+ var dropDown = $('.ul_materias');    
+
+    botao.on('click', function(event){
+        dropDown.stop(true,true).slideToggle();
+        event.stopPropagation();
+    });
+});
+$(document).ready(function() {
+    var botao = $('.btn2');
+    var dropDown = $('.ul_fale');    
+   
+       botao.on('click', function(event){
+           dropDown.stop(true,true).slideToggle();
+           event.stopPropagation();
+       });
+   });
   
   
